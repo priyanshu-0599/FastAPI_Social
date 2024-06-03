@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+psycopg = {extras = ["binary", "pool"], version = "*"}
+sqlalchemy = "*"
+passlib = {extras = ["bcrypt"], version = "*"}
+fastapi = {extras = ["all"], version = "*"}
+python-jose = {extras = ["cryptography"], version = "*"}
+configparser = "*"
+alembic = "*"
+
+[dev-packages]
+black = "*"
+
+[requires]
+python_version = "3.12"
